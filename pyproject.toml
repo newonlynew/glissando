@@ -1,0 +1,15 @@
+[project]
+name = "glissando"
+version = "0.1.0"
+description = "Add your description here"
+requires-python = ">=3.10"
+dependencies = [
+    "accelerate>=1.6.0",
+    "click>=8.1.8",
+    "hdbscan>=0.8.40",
+    "pandas>=2.2.3",
+    "plotly>=6.0.1",
+    "torch>=2.6.0",
+    "transformers>=4.51.0",
+    "umap-learn>=0.5.7",
+]
