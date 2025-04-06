@@ -22,7 +22,6 @@ class TelegramGetter(BaseGetter):
                 text=raw_message["text"],
             )
             messages.append(message)
-        messages = messages[:1000]
         return Messages(messages)
 
 
