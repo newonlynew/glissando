@@ -18,8 +18,8 @@ class EmbeddingGenerator:
         embeddings = []
         messages = messages.to_list()
 
-        for i in range(0, len(messages), BATCH_SIZE):
-            batch = messages[i:i + BATCH_SIZE]
+        for i in range(0, len(messages), self.BATCH_SIZE):
+            batch = messages[i:i + self.BATCH_SIZE]
             encoded_input = self._tokenizer(
                 batch,
                 padding=True,

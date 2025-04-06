@@ -13,3 +13,16 @@ dependencies = [
     "transformers>=4.51.0",
     "umap-learn>=0.5.7",
 ]
+
+[project.scripts]
+glissando = "glissando.__main__:main"
+
+[tool.uv]
+package = true
+
+[tool.uv.sources]
+torch = [{ index = "pytorch-cu118"}]
+
+[[tool.uv.index]]
+name = "pytorch-cu118"
+url = "https://download.pytorch.org/whl/cu118"
