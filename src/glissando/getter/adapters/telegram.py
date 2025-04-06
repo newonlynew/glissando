@@ -26,5 +26,5 @@ class TelegramGetter(BaseGetter):
 
 
 def load_json(filepath: Path) -> dict:
-    with open(filepath) as file:
+    with open(filepath, encoding="utf-8") as file:
         return json.load(file)
