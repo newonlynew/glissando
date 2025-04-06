@@ -13,3 +13,6 @@ dependencies = [
     "transformers>=4.51.0",
     "umap-learn>=0.5.7",
 ]
+
+[project.scripts]
+glissando = "glissando.__main__:main"
